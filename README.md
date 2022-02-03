@@ -1,5 +1,14 @@
 # tensorrt_demos
 
+## Deploy History 🌳
+
+2022-02-03
+- AGX 보드에서 테스트시 onnx==1.4.1 버전 설치 시 문제 발생함
+1. sudo apt-get install cmake libprotobuf-dev protobuf-compiler
+2. sudo pip3 install Cython
+3. sudo pip3 install onnx==1.4.1
+- 이 순서로 설치 시 정상 설치 완료
+
 Examples demonstrating how to optimize Caffe/TensorFlow/DarkNet/PyTorch models with TensorRT and do inference on NVIDIA Jetson or x86_64 platforms.  Highlights:
 
 * Run an optimized "MODNet" video matting model at ~21 FPS on Jetson Xavier NX.
